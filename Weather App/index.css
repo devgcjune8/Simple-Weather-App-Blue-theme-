@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+* {
+    font-family: 'Dosis', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: radial-gradient(rgb(105, 181, 216) 10%, rgb(29, 153, 236) 100%);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px 20px;
+}
+
+header input{
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 2em;
+    text-align: center;
+
+    border-bottom: 2px solid rgb(0, 0, 39);
+    background-color: rgb(98, 224, 224);
+    color:rgb(17, 14, 59);
+
+    /* add transiton */
+    /*transition: 250ms linear*/
+}
+
+header input:focus {
+    background-color: antiquewhite;
+}
+
+
+main  {
+    flex: 1 1 100%;
+    padding: 20px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.loc .city {
+    color:rgb(218, 216, 238);
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bolder;    
+}
+
+.loc .date {
+    color:beige;
+    font-size: 1.6em;
+
+}
+
+.current .temp {
+    color: bisque;
+    font-size: 5em;
+    font-weight: 1000;
+    text-shadow: 4px 0px 4px rgb(32, 31, 31);
+    margin-bottom: 10px;
+    transition: 250ms linear;
+}
+
+.current .temp span {
+    font-weight: bold;
+}
+
+.current .weather {
+    color: rgb(235, 235, 190);
+    font-size: 3em;
+    font-style: oblique;
+    margin-bottom: 15px;
+    text-shadow: 2px 0px 6px rgb(32, 31, 31);
+}
+
+.current .hi-low {
+    color:rgb(205, 212, 214);
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 0px 2px rgb(32, 31, 31);
+}
